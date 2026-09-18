@@ -59,6 +59,39 @@
       main { margin-top: 35px; }
       h1 { font-size: 34px; }
     }
+    .header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+}
+
+.header-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.profile-photo {
+  width: 130px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .header-top {
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .profile-photo {
+    width: 90px;
+  }
+
+  .header-text h1 {
+    font-size: 28px;
+  }
+}
   </style>
 </head>
 <body>
